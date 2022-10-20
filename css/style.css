@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 12rem;
+    align-items: center;
+}
+
+header img{
+    width: 60%;
+    margin-left: 1.5rem;
+}
+
+header div{
+    width: 45%;
+    align-items: center;
+
+}
+
+header ul li{
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    align-content: space-between;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #B82312;
+}
+
+header nav{
+    width: 100%;
+    height: 12rem;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 15rem;
+    align-items: center;
+}
+
+header a:hover{
+    color: #041E02;
+}
+
+footer{
+    background-color: #cbbfbf9c;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer div{
+    width: 100%;
+    line-height: 1.5rem;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer div p{
+    align-items: center;
+}
+
+footer ul li{
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #041E02;
+}
+
+footer nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+    height: 4rem;
+    align-items: center;
+
+}
+
+footer div p{
+    color: #041E02;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+footer a:hover{
+    color: #B82312;
+}
+
+body{
+    background-color: #ebdbc93f;
+
+}
+
+body main{
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    margin: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+body h1{
+    color: #b82312;
+    font-size: 2.5rem;
+    font-family: 'Clicker Script', cursive;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 120vh;
+}
+
+.mainIndex img{
+    width: 93rem;
+    height: auto;
+    margin-right: 0.3rem;
+}
+
+.novedades{
+    width: 100%;
+    }
+
+.novedades img{
+    border-radius: 1rem;
+}
+
+.solana{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.solana img{
+    width: auto;
+    height: 25rem;
+    border-radius: 20%;
+    opacity: 85%;
+
+}
+
+.solana p{
+    color: #041E02;
+    margin: 2rem;
+    text-align: justify;
+}
+
+h2{
+    color: #041E02;
+    width: 90%;
+    font-size: 3.5rem;
+    font-family: 'Clicker Script', cursive;
+    margin-left: 15rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.munay{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.munay img{
+    width: auto;
+    height: 12rem;
+    border-radius: 20%;
+}
+
+.munay p{
+    color: #041E02;
+    margin: 2rem;
+    text-align: justify;
+}
+
+.sabias h2 {
+    width: 80%;
+    font-size: 2rem;
+    margin-left: 15rem;
+}
+
+.mates{
+    width: 100%;
+    height: 50rem;
+}
+
+.mates div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mates div div{
+    background-color: #ff633352;
+    width: 15rem;
+    height: 20rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mates div img{
+    width: auto;
+    height: 10rem;
+}
+
+.mates div p{
+    text-align: center;
+}
+
+.cuencos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cuencos div{
+    background-color: #ff633352;
+    width: 15rem;
+    height: 20rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuencos div img{
+    width: auto;
+    height: 10rem;
+}
+
+.cuencos div p{
+    text-align: center;
+}
+
+.contactame h2{
+    width: 85%;
+    font-size: 3rem;
+    margin-left: 15rem;
+}
+
+.contForm{
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contForm h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #041E02;
+}
+
+.formulario{
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.redes{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contForm h3{
+    color: #FF6333
+}
+
+.redes img{
+    margin: 0.5rem;
+    width:3rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.contForm form .campo, textarea{
+    width: 20rem;
+    padding: 15px 10px;
+    font-size: 1rem;
+    border: solid grey;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.contForm form textarea{
+    max-width: 20rem;
+    min-width: 20rem;
+    min-height: 10rem;
+    max-width: 12rem;
+}
+
+.contForm .btnEnviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    background: #FF6333;
+    color: #EBDBC9;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.contForm .btnEnviar:hover{
+    background: #ff633385;
+}
