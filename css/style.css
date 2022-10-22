@@ -115,7 +115,11 @@ footer a:hover{
 
 body{
     background-color: #ebdbc93f;
+}
 
+.bodyIndex{
+    background-image: url(../assets/img/backgroundIndex4.png);
+    width:100%;
 }
 
 body main{
@@ -136,15 +140,16 @@ main{
 }
 
 body h1{
-    color: #b82312;
+    color: #345911;
     font-size: 2.5rem;
+    font-weight: lighter;
     font-family: 'Clicker Script', cursive;
-    height: 4rem;
     display: flex;
     align-items: center;
 }
 
 .mainIndex{
+    width: 98%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -152,10 +157,45 @@ body h1{
     height: 120vh;
 }
 
-.mainIndex img{
-    width: 93rem;
-    height: auto;
-    margin-right: 0.3rem;
+.mainIndex h1{
+    color: #345911;
+    font-size: 6rem;
+    font-weight: lighter;
+    font-family: 'Clicker Script', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.mainIndex h2{
+    color: #345911;
+    width:45%;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnPedidos{
+    padding: 8%
+}
+
+.btnPedidos button{
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: #345911;    
+}
+
+.btnPedidos button a{
+    color: #345911;
+    text-decoration: none;
+}
+
+.btnPedidos button:hover{
+    transform: scale(1.2)
 }
 
 .novedades{
@@ -191,10 +231,9 @@ body h1{
 
 h2{
     color: #041E02;
-    width: 90%;
+    width: 100%;
     font-size: 3.5rem;
     font-family: 'Clicker Script', cursive;
-    margin-left: 15rem;
     margin-top: 2rem;
     display: flex;
     align-items: center;
