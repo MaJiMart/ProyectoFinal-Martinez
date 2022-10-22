@@ -5,22 +5,31 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.estructura {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns:1fr;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
+}
+
 header{
     display: flex;
-    width: 100%;
-    height: 12rem;
     align-items: center;
+    grid-area: header;
 }
 
 header img{
-    width: 60%;
-    margin-left: 1.5rem;
+    width: 50%;
+    margin-left: 3%;
 }
 
 header div{
+    padding: 0.5rem;
     width: 45%;
     align-items: center;
-
 }
 
 header ul li{
@@ -39,14 +48,12 @@ header ul a{
 
 header nav{
     width: 100%;
-    height: 12rem;
 }
 
 header nav ul{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 15rem;
     align-items: center;
 }
 
@@ -56,28 +63,26 @@ header a:hover{
 
 footer{
     background-color: #cbbfbf9c;
-    height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    grid-area: footer;
 }
 
 footer div{
     width: 100%;
-    line-height: 1.5rem;
-    align-items: center;
-    margin-top: auto;
+    padding: 1rem;
 }
 
 footer div p{
     align-items: center;
+    line-height: 1.5rem;
 }
 
 footer ul li{
     list-style-type: none;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 0.5rem;
     text-align: center;
     text-decoration: none;
 }
@@ -97,9 +102,7 @@ footer nav ul{
     display: flex;
     justify-content: space-between;
     width: 35rem;
-    height: 4rem;
     align-items: center;
-
 }
 
 footer div p{
@@ -118,39 +121,26 @@ body{
     width:100%;
 }
 
-.bodyIndex{
-    background-image: url(../assets/img/backgroundIndex4.png);
-    width:100%;
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    grid-area: main;
 }
 
-body main{
-    width: 94%;
+body h1{
+    color: #345911;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-family: 'Clicker Script', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main{
-    width: 100%;
-    margin: 1rem;
-    margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-}
-
-body h1{
-    color: #345911;
-    font-size: 2.5rem;
-    font-weight: lighter;
-    font-family: 'Clicker Script', cursive;
-    display: flex;
-    align-items: center;
-}
-
 .mainIndex{
-    width: 98%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -161,10 +151,9 @@ body h1{
 .mainIndex h1{
     color: #345911;
     font-size: 6rem;
+    text-align: center;
     font-weight: lighter;
     font-family: 'Clicker Script', cursive;
-    display: flex;
-    align-items: center;
 }
 
 .mainIndex h2{
@@ -178,7 +167,7 @@ body h1{
 }
 
 .btnPedidos{
-    padding: 8%
+    padding: 8%;
 }
 
 .btnPedidos button{
@@ -199,50 +188,42 @@ body h1{
     transform: scale(1.2)
 }
 
-.novedades{
-    width: 100%;
-    }
-
-.novedades img{
-    border-radius: 1rem;
-}
-
 .solana{
-    width: 100%;
-    height: 25rem;
+    margin: 0rem 3rem 0rem 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .solana img{
     width: auto;
-    height: 25rem;
+    height: 20rem;
     border-radius: 20%;
     opacity: 85%;
-
 }
 
 .solana p{
     color: #041E02;
     margin: 2rem;
+    font-size: 1.2rem;
     text-align: justify;
 }
 
 h2{
     color: #041E02;
-    width: 100%;
-    font-size: 3.5rem;
-    font-family: 'Clicker Script', cursive;
-    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-weight: lighter;
     display: flex;
     align-items: center;
 }
 
+.h2Conocenos{
+    margin: 3rem 3rem 0rem 5rem;
+}
+
 .munay{
-    width: 100%;
-    height: 15rem;
+    margin: 0rem 3rem 0rem 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -250,25 +231,34 @@ h2{
 
 .munay img{
     width: auto;
-    height: 12rem;
+    height: 20rem;
     border-radius: 20%;
 }
 
 .munay p{
     color: #041E02;
     margin: 2rem;
+    font-size: 1.2rem;
     text-align: justify;
 }
 
 .sabias h2 {
-    width: 80%;
-    font-size: 2rem;
+    padding: 1rem;
     margin-left: 15rem;
+}
+
+.video{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .mates{
     width: 100%;
-    height: 50rem;
+}
+
+.mates h2{
+    margin-left: 3rem;
 }
 
 .mates div{
@@ -281,7 +271,7 @@ h2{
     background-color: #ff633352;
     width: 15rem;
     height: 20rem;
-    margin: 2rem;
+    margin: 3rem;
     padding: 1rem;
     border-radius: 5%;
     display: flex;
@@ -300,16 +290,18 @@ h2{
 }
 
 .cuencos{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    width: 100%;
+}
+
+.cuencos h2{
+    margin-left: 3rem;
 }
 
 .cuencos div{
     background-color: #ff633352;
     width: 15rem;
     height: 20rem;
-    margin: 2rem;
+    margin: 3rem 3rem 3rem 9rem;
     padding: 1rem;
     border-radius: 5%;
     display: flex;
@@ -329,12 +321,11 @@ h2{
 
 .contactame h2{
     width: 85%;
-    font-size: 3rem;
-    margin-left: 15rem;
+    font-size: 2rem;
+    margin-left: 3rem;
 }
 
 .contForm{
-    margin-right: 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -343,33 +334,52 @@ h2{
 .contForm h3{
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #041E02;
+    font-weight: 400;
+    color: #FF6333
+}
+
+.pedidos{
+    margin: 0rem 3rem 3rem 1rem;
+}
+
+.pedidos p{
+    color: #345911;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 2.5rem;
 }
 
 .formulario{
-    width: 50%;
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+}
+
+.izquierda{
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .redes{
-    width: 50%;
+    margin: 3rem 3rem 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.contForm h3{
-    color: #FF6333
-}
-
 .redes img{
-    margin: 0.5rem;
+    margin-left: 0.5rem;
     width:3rem;
     height: auto;
     cursor: pointer;
+}
+
+.formulario{
+    width: 50%;
+    border-left: double 0.5rem #FF6333;
 }
 
 .contForm form .campo, textarea{
