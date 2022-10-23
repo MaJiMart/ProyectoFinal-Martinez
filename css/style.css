@@ -207,6 +207,7 @@ body h1{
     margin: 2rem;
     font-size: 1.2rem;
     text-align: justify;
+    line-height: 2.5rem;
 }
 
 h2{
@@ -240,6 +241,7 @@ h2{
     margin: 2rem;
     font-size: 1.2rem;
     text-align: justify;
+    line-height: 2.5rem;
 }
 
 .sabias h2 {
@@ -338,6 +340,14 @@ h2{
     color: #FF6333
 }
 
+.izquierda{
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .pedidos{
     margin: 0rem 3rem 3rem 1rem;
 }
@@ -351,14 +361,6 @@ h2{
 
 .formulario{
     padding: 3rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.izquierda{
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
 }
