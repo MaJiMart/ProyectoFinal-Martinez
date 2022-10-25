@@ -388,12 +388,6 @@ h2{
     line-height: 2.5rem;
 }
 
-.formulario{
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-}
-
 .redes{
     margin: 3rem 3rem 2rem 1rem;
     display: flex;
@@ -415,6 +409,9 @@ h2{
 }
 
 .formulario{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
     width: 50%;
     border-left: double 0.5rem #FF6333;
 }
@@ -450,4 +447,366 @@ h2{
 
 .contForm .btnEnviar:hover{
     background: #ff633385;
+}
+
+@media screen and (max-width:1024px) {
+    .estructura {
+        display: grid;
+        grid-template-areas:    "header"
+                                "main";
+        grid-template-rows: 1fr 10fr;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .carousel{
+        width: 80%;
+    }
+
+    .sabias h2 {
+        width: 90%;
+        margin: 0;
+        padding: 1rem;
+        margin-left: 4rem;
+    }
+
+    .cuencos div{
+        margin-left: 4rem;
+    }
+}
+
+#menu, #menuCheck{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    #menuCheck:not(:checked) ~ nav{
+        display: none;
+    }    
+
+    #menuCheck:checked ~ nav{
+        display: block;
+    }
+    
+    #menu{
+        display: block;
+        color: #B82312;
+        font-size: 3rem;
+        position: absolute;
+        right: 2rem;
+    }
+
+    #menuCerrar{
+        display: none;
+    }
+
+    #menuCheck:checked ~ label #menuAbrir{
+        display: none;
+    }
+
+    #menuCheck:checked ~ label #menuCerrar{
+        display: block;
+    }
+
+    header img{
+        width: 70%;
+    }
+
+    header nav{
+        position: absolute;
+        top: 9rem;
+        right: 0;
+        height: 40%;
+        width: 35%;
+        background-color: #b82312d7;
+        border-radius: 10px;
+        color: #EBDBC9;
+        z-index: 9999;
+    }
+
+    header nav a{
+        color: #EBDBC9;
+        font-size: 1.5rem;
+        margin: 2rem;
+        padding: rem;
+        line-height: 3rem;
+    }
+
+    header nav ul, header nav ul li{
+        display: block;
+        text-align: right;
+        margin-top: 1.5rem;
+    }
+
+    .solana{
+        display: block;
+    }
+
+    .solana div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .munay{
+        margin-top: 0;
+        display: block;
+    }
+
+    .munay div{
+        margin: 0%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video{
+        width: 90%;
+    }
+
+    .cuencos div{
+        margin-left: 6rem;
+    }
+
+    .contForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .izquierda{
+        width: 90%;
+        order: 2
+    }
+
+    .pedidos{
+        margin: 1rem;
+        order:2;
+    }
+
+    .redes{
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0;
+        justify-content:flex-start;
+        align-items: center;
+        order: 1
+    }
+
+    .formulario{
+        width: 90%;
+        justify-content: flex-start;
+        border: none;
+        order: 1;
+    }
+
+    .redes, .formulario{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .estructura {
+        grid-template-rows: 0.25fr 8fr;
+    }
+    
+    #menu{
+        font-size: 1.5rem;
+    }
+    
+    header img{
+        width: 90%;
+    }
+
+    header nav{
+        top: 6.5rem;
+        height: 40%;
+        width: 50%;
+    }
+
+    header nav a{
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        line-height: 1rem;
+    }
+
+    .mainIndex h1{
+        color: #345911;
+        font-size: 3rem;
+    }
+    
+    .mainIndex h2{
+        color: #345911;
+        width:50%;
+        font-size: 0.65rem;
+    }
+
+    .btnPedidos button{
+        padding: 0.5rem;
+        width: 8rem;
+        font-size: 1rem;
+        border-radius: 5rem;
+    }
+
+    .btnPedidos button:hover{
+        transform: none;
+    }
+
+    main{
+        width: 100%;
+        align-items: center;
+    }
+
+    .solana{
+        margin: 0;
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .solana img{
+        margin: 0;
+        height: 18rem;
+    }
+    
+    .solana p{
+        margin: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .h2Conocenos{
+        width: 100%;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2{
+        width: 85%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .h2Conocenos{
+        margin: 0.5rem
+    }
+    
+    .munay{
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .munay img{
+        height: 20rem;
+    }
+    
+    .munay p{
+        margin: 1rem 2rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .carousel{
+        width: 90%;
+    }
+
+    .sabias h1{
+        width: 90%;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .sabias h2 {
+        width: 90%;
+        padding: 0;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    .video{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video iframe{
+        width: 75%;
+    }
+
+    body h1{
+        width: 85%;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .mates h2{
+        margin: 1rem;
+    }
+
+    .cuencos div{
+        margin: 1rem 4rem;
+    }
+
+    .contactame h2{
+        width: 90%;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .contForm{
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .pedidos{
+        width: 90%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .redes{
+        width: 90%;
+        margin: 0;
+        padding: 1rem;
+    
+    }
+
+    .formulario{
+        width: 100%;
+        margin: 1rem 1rem 0rem 1rem;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .contForm form .campo, textarea{
+        width: 18rem;
+    }
+    
+    .contForm form textarea{
+        max-width: 18rem;
+        min-width: 18rem;
+    }
+
+    .izquierda{
+        width: 100%;
+        padding: 0%;
+        align-items: center;
+    }
+
+    .contForm h3{
+        font-size: 1.2rem;
+    }
+
+    .redes a{
+        font-size: 0.9rem;
+    }
 }
