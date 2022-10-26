@@ -612,7 +612,7 @@ h2{
 
 @media screen and (max-width:480px) {
     .estructura {
-        grid-template-rows: 0.25fr 8fr;
+        display: block;
     }
     
     #menu{
@@ -624,9 +624,9 @@ h2{
     }
 
     header nav{
-        top: 6.5rem;
+        top: 7rem;
         height: 40%;
-        width: 50%;
+        width: 40%;
     }
 
     header nav a{
@@ -639,12 +639,15 @@ h2{
     .mainIndex h1{
         color: #345911;
         font-size: 3rem;
+        text-align: center;
     }
     
     .mainIndex h2{
         color: #345911;
         width:50%;
+        margin-top: 1rem;
         font-size: 0.65rem;
+        text-align: center;
     }
 
     .btnPedidos button{
@@ -729,6 +732,7 @@ h2{
         padding: 0;
         margin: 1rem;
         text-align: center;
+        font-size: 1.5rem;
     }
     
     .video{
@@ -747,12 +751,36 @@ h2{
         text-align: center;
     }
 
+    .mates{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mates div{
+        margin: 0%;
+    }
+
     .mates h2{
-        margin: 1rem;
+        margin: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .cuencos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .cuencos div{
-        margin: 1rem 4rem;
+        margin: 0
+    }
+
+    .cuencos h2{
+        margin: 1.5rem;
+        font-size: 1.5rem;
     }
 
     .contactame h2{
