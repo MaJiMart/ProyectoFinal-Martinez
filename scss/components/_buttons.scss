@@ -1,0 +1,21 @@
+.btnPedidos{
+    padding: 8%;
+}
+
+.btnPedidos button{
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: #345911;    
+}
+
+.btnPedidos button a{
+    color: #345911;
+    text-decoration: none;
+}
+
+.btnPedidos button:hover{
+    transform: scale(1.2)
+}

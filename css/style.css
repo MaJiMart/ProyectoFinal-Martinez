@@ -124,7 +124,7 @@ body{
     background-image: url(../assets/img/background.png);
     width:100%;
 }
-/* Pasado a scss*/
+
 h1{
     color: #345911;
     font-size: 3.5rem;
@@ -407,7 +407,7 @@ h2{
 .redes i:hover{
     color: #345911;
 }
-
+/*pasado a scss*/
 .formulario{
     padding: 3rem;
     display: flex;

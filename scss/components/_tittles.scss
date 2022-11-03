@@ -1,0 +1,78 @@
+h1{
+    color: #345911;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-family: 'Clicker Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #041E02;
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+
+.mainIndex h1{
+    color: #345911;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Clicker Script', cursive;
+}
+
+.mainIndex h2{
+    color: #345911;
+    width:45%;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2Conocenos{
+    margin: 3rem 3rem 0rem 5rem;
+}
+
+.sabias h2 {
+    width: 100%;
+    padding: 1rem;
+    margin-left: 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.mates h2{
+    margin-left: 3rem;
+}
+
+.mates div h3{
+    color: #041E02;
+}
+
+.cuencos h2{
+    margin-left: 3rem;
+}
+
+.cuencos div h3{
+    color: #041E02;
+}
+
+.contactame h2{
+    width: 85%;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+.contForm h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #FF6333
+}
