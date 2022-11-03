@@ -1,0 +1,58 @@
+footer{
+    background-color: #cbbfbf9c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-area: footer;
+}
+
+footer div{
+    width: 100%;
+    padding: 1rem;
+}
+
+footer div p{
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+.footerSabias div p{
+    line-height: 1rem;
+}
+
+footer ul li{
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #041E02;
+}
+
+footer nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+    align-items: center;
+}
+
+footer div p{
+    color: #041E02;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+footer a:hover{
+    color: #B82312;
+}

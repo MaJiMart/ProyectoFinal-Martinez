@@ -124,6 +124,16 @@ body{
     background-image: url(../assets/img/background.png);
     width:100%;
 }
+/* Pasado a scss*/
+h1{
+    color: #345911;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-family: 'Clicker Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 main{
     height: 100%;
@@ -132,16 +142,6 @@ main{
     align-content: flex-start;
     justify-content: flex-start;
     grid-area: main;
-}
-
-body h1{
-    color: #345911;
-    font-size: 3.5rem;
-    font-weight: lighter;
-    font-family: 'Clicker Script', cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .mainIndex{

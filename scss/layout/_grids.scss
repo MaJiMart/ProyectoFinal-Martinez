@@ -1,0 +1,8 @@
+.estructura {
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";    
+    grid-template-columns:1fr;
+    grid-template-rows: 0.5fr 10fr 0.5fr;
+}
