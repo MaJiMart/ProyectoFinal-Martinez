@@ -62,6 +62,7 @@ header nav ul {
   display: none;
 }
 
+/*estilod de todos los contenedores*/
 main {
   height: 100%;
   display: flex;
@@ -76,16 +77,9 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 120vh;
 }
 
-.sabias {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/*estilod de todos los contenedores*/
+/*conocenos.html*/
 .solana {
   margin: 0rem 3rem 0rem 3rem;
   display: flex;
@@ -100,6 +94,7 @@ main {
   align-items: center;
 }
 
+/*productos.html*/
 .mates {
   width: 100%;
 }
@@ -140,6 +135,13 @@ main {
   align-items: center;
 }
 
+.sabias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*contactame.html*/
 .contForm {
   display: flex;
   flex-direction: row;
