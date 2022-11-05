@@ -1,33 +1,49 @@
-.solana p{
-    color: #041E02;
-    margin: 2rem;
-    font-size: 1.2rem;
-    text-align: justify;
-    line-height: 2.5rem;
+/*conocenos.html*/
+.solana {
+    p {
+        color: #041E02;
+        margin: 2rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 2.5rem;
+    }
 }
 
-.munay p{
-    color: #041E02;
-    margin: 2rem;
-    font-size: 1.2rem;
-    text-align: justify;
-    line-height: 2.5rem;
+.munay {
+    p {
+        color: #041E02;
+        margin: 2rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 2.5rem;
+    }
 }
 
-.mates div p{
-    color: #041E02;
-    text-align: center;
+/*productos.html*/
+.mates {
+    div {
+        p {
+            color: #041E02;
+            text-align: center;
+        }
+    }
 }
 
-.cuencos div p{
-    color: #041E02;
-    text-align: center;
+.cuencos {
+    div {
+        p {
+            color: #041E02;
+            text-align: center;
+        }
+    }
 }
 
-.pedidos p{
-    color: #345911;
-    text-align: justify;
-    font-size: 1rem;
-    line-height: 2.5rem;
+/*contactame.html*/
+.pedidos {
+    p {
+        color: #345911;
+        text-align: justify;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
 }
-
