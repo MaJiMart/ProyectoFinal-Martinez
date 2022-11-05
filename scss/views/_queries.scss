@@ -1,8 +1,8 @@
 @media screen and (max-width:1024px) {
     .estructura {
         display: grid;
-        grid-template-areas:    "header"
-                                "main";
+        grid-template-areas: "header"
+            "main";
         grid-template-rows: 1fr 10fr;
     }
 
@@ -10,32 +10,36 @@
         display: none;
     }
 
-    .carousel{
+    .carousel {
         width: 80%;
     }
 
-    .sabias h2 {
-        width: 90%;
-        margin: 0;
-        padding: 1rem;
-        margin-left: 4rem;
+    .sabias {
+        h2 {
+            width: 90%;
+            margin: 0;
+            padding: 1rem;
+            margin-left: 4rem;
+        }
     }
 
-    .cuencos div{
-        margin-left: 4rem;
+    .cuencos {
+        div {
+            margin-left: 4rem;
+        }
     }
 }
 
 @media screen and (max-width:768px) {
-    #menuCheck:not(:checked) ~ nav{
+    #menuCheck:not(:checked)~nav {
         display: none;
-    }    
+    }
 
-    #menuCheck:checked ~ nav{
+    #menuCheck:checked~nav {
         display: block;
     }
-    
-    #menu{
+
+    #menu {
         display: block;
         color: #B82312;
         font-size: 3rem;
@@ -43,113 +47,119 @@
         right: 2rem;
     }
 
-    #menuCerrar{
+    #menuCerrar {
         display: none;
     }
 
-    #menuCheck:checked ~ label #menuAbrir{
+    #menuCheck:checked~label #menuAbrir {
         display: none;
     }
 
-    #menuCheck:checked ~ label #menuCerrar{
+    #menuCheck:checked~label #menuCerrar {
         display: block;
     }
 
-    header img{
-        width: 70%;
+    header {
+        img {
+            width: 70%;
+        }
+
+        nav {
+            position: absolute;
+            top: 9rem;
+            right: 0;
+            height: 40%;
+            width: 35%;
+            background-color: #b82312d7;
+            border-radius: 10px;
+            color: #EBDBC9;
+            z-index: 9999;
+
+            a {
+                color: #EBDBC9;
+                font-size: 1.5rem;
+                margin: 2rem;
+                padding: rem;
+                line-height: 3rem;
+            }
+
+            ul,
+            li {
+                display: block;
+                text-align: right;
+                margin-top: 1.5rem;
+            }
+        }
     }
 
-    header nav{
-        position: absolute;
-        top: 9rem;
-        right: 0;
-        height: 40%;
-        width: 35%;
-        background-color: #b82312d7;
-        border-radius: 10px;
-        color: #EBDBC9;
-        z-index: 9999;
-    }
-
-    header nav a{
-        color: #EBDBC9;
-        font-size: 1.5rem;
-        margin: 2rem;
-        padding: rem;
-        line-height: 3rem;
-    }
-
-    header nav ul, header nav ul li{
+    .solana {
         display: block;
-        text-align: right;
-        margin-top: 1.5rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
-    .solana{
-        display: block;
-    }
-
-    .solana div{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .munay{
+    .munay {
         margin-top: 0;
         display: block;
+
+        div {
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
-    .munay div{
-        margin: 0%;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .video{
+    .video {
         width: 90%;
     }
 
-    .cuencos div{
-        margin-left: 6rem;
+    .cuencos {
+        div {
+            margin-left: 6rem;
+        }
     }
 
-    .contForm{
+    .contForm {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        .izquierda {
+            width: 90%;
+            order: 2;
+
+            .pedidos {
+                margin: 1rem;
+                order: 2;
+            }
+
+            .redes {
+                width: 100%;
+                margin-top: 1rem;
+                padding: 0;
+                justify-content: flex-start;
+                align-items: center;
+                order: 1
+            }
+        }
+
+        .formulario {
+            width: 90%;
+            justify-content: flex-start;
+            border: none;
+            order: 1;
+        }
     }
 
-    .izquierda{
-        width: 90%;
-        order: 2
-    }
-
-    .pedidos{
-        margin: 1rem;
-        order:2;
-    }
-
-    .redes{
-        width: 100%;
-        margin-top: 1rem;
-        padding: 0;
-        justify-content:flex-start;
-        align-items: center;
-        order: 1
-    }
-
-    .formulario{
-        width: 90%;
-        justify-content: flex-start;
-        border: none;
-        order: 1;
-    }
-
-    .redes, .formulario{
+    .redes,
+    .formulario {
         display: flex;
         flex-direction: row;
     }
@@ -159,76 +169,78 @@
     .estructura {
         display: block;
     }
-    
-    #menu{
+
+    #menu {
         font-size: 1.5rem;
     }
-    
-    header img{
-        width: 90%;
+
+    header {
+        img {
+            width: 90%;
+        }
+
+        nav {
+            top: 7rem;
+            height: 40%;
+            width: 40%;
+
+            a {
+                font-size: 1rem;
+                margin: 1rem;
+                padding: 1rem;
+                line-height: 1rem;
+            }
+        }
     }
 
-    header nav{
-        top: 7rem;
-        height: 40%;
-        width: 40%;
+    .mainIndex {
+        h1 {
+            color: #345911;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #345911;
+            width: 50%;
+            margin-top: 1rem;
+            font-size: 0.65rem;
+            text-align: center;
+        }
+
+        .btnPedidos {
+            button {
+                padding: 0.5rem;
+                width: 8rem;
+                font-size: 1rem;
+                border-radius: 5rem;
+                align-items: center;
+
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
     }
 
-    header nav a{
-        font-size: 1rem;
-        margin: 1rem;
-        padding: 1rem;
-        line-height: 1rem;
-    }
-
-    .mainIndex h1{
-        color: #345911;
-        font-size: 3rem;
-        text-align: center;
-    }
-    
-    .mainIndex h2{
-        color: #345911;
-        width:50%;
-        margin-top: 1rem;
-        font-size: 0.65rem;
-        text-align: center;
-    }
-
-    .btnPedidos button{
-        padding: 0.5rem;
-        width: 8rem;
-        font-size: 1rem;
-        border-radius: 5rem;
-    }
-
-    .btnPedidos button:hover{
-        transform: none;
-    }
-
-    main{
-        width: 100%;
-        align-items: center;
-    }
-
-    .solana{
+    .solana {
         margin: 0;
         width: 90%;
         flex-direction: column;
-    }
-    
-    .solana img{
-        margin: 0;
-        height: 18rem;
-    }
-    
-    .solana p{
-        margin: 0.5rem;
-        font-size: 1rem;
-        line-height: 1.5rem;
+
+        img {
+            margin: 0;
+            height: 18rem;
+        }
+
+        p {
+            margin: 0.5rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
     }
 
-    .h2Conocenos{
+    .h2Conocenos {
         width: 100%;
         font-weight: 600;
         display: flex;
@@ -236,150 +248,159 @@
         justify-content: center;
     }
 
-    h2{
+    h2 {
         width: 85%;
         font-size: 1rem;
         text-align: center;
     }
-    
-    .h2Conocenos{
+
+    .h2Conocenos {
         margin: 0.5rem
     }
-    
-    .munay{
+
+    .munay {
         margin: 0;
         flex-direction: column;
         align-items: center;
-    }
-    
-    .munay img{
-        height: 20rem;
-    }
-    
-    .munay p{
-        margin: 1rem 2rem;
-        font-size: 1rem;
-        line-height: 1.5rem;
+
+        img {
+            height: 20rem;
+        }
+
+        p {
+            margin: 1rem 2rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
     }
 
-    .carousel{
+    .carousel {
         width: 90%;
     }
 
-    .sabias h1{
-        width: 90%;
-        font-size: 3rem;
-        text-align: center;
+    .sabias {
+        h1 {
+            width: 90%;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        h2 {
+            width: 90%;
+            padding: 0;
+            margin: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
     }
 
-    .sabias h2 {
-        width: 90%;
-        padding: 0;
-        margin: 1rem;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    
-    .video{
+    .video {
         padding: 1rem;
         display: flex;
         justify-content: center;
+
+        iframe {
+            width: 75%;
+        }
     }
 
-    .video iframe{
-        width: 75%;
+    body {
+        h1 {
+            width: 85%;
+            font-size: 3rem;
+            text-align: center;
+        }
     }
 
-    body h1{
-        width: 85%;
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .mates{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .mates div{
-        margin: 0%;
-    }
-
-    .mates h2{
-        margin: 1.5rem;
-        font-size: 1.5rem;
-    }
-
-    .cuencos{
+    .mates {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        div {
+            margin: 0%;
+        }
+
+        h2 {
+            margin: 1.5rem;
+            font-size: 1.5rem;
+        }
     }
 
-    .cuencos div{
-        margin: 0
-    }
-
-    .cuencos h2{
-        margin: 1.5rem;
-        font-size: 1.5rem;
-    }
-
-    .contactame h2{
-        width: 90%;
-        margin: 0;
-        font-size: 1.5rem;
-    }
-
-    .contForm{
-        width: 100%;
-        margin: 0;
-        padding: 0%;
-    }
-
-    .pedidos{
-        width: 90%;
-        margin: 0;
-        padding: 1rem;
-    }
-
-    .redes{
-        width: 90%;
-        margin: 0;
-        padding: 1rem;
-    
-    }
-
-    .formulario{
-        width: 100%;
-        margin: 1rem 1rem 0rem 1rem;
-        padding: 1rem;
-        width: 90%;
-    }
-
-    .contForm form .campo, textarea{
-        width: 18rem;
-    }
-    
-    .contForm form textarea{
-        max-width: 18rem;
-        min-width: 18rem;
-    }
-
-    .izquierda{
-        width: 100%;
-        padding: 0%;
+    .cuencos {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+
+        div {
+            margin: 0
+        }
+
+        h2 {
+            margin: 1.5rem;
+            font-size: 1.5rem;
+        }
     }
 
-    .contForm h3{
-        font-size: 1.2rem;
-    }
+    .contactame {
+        h2 {
+            width: 90%;
+            margin: 0;
+            font-size: 1.5rem;
+        }
 
-    .redes a{
-        font-size: 0.9rem;
+        .contForm {
+            width: 100%;
+            margin: 0;
+            padding: 0%;
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .izquierda {
+                width: 100%;
+                padding: 0%;
+                align-items: center;
+
+                .pedidos {
+                    width: 90%;
+                    margin: 0;
+                    padding: 1rem;
+                }
+
+                .redes {
+                    width: 90%;
+                    margin: 0;
+                    padding: 1rem;
+
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            .formulario {
+                width: 100%;
+                margin: 1rem 1rem 0rem 1rem;
+                padding: 1rem;
+                width: 90%;
+
+                form {
+
+                    .campo,
+                    textarea {
+                        width: 18rem;
+                    }
+
+                    textarea {
+                        max-width: 18rem;
+                        min-width: 18rem;
+                    }
+                }
+            }
+        }
     }
 }
