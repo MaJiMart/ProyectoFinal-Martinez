@@ -1,4 +1,4 @@
-h1{
+h1 {
     color: #345911;
     font-size: 3.5rem;
     font-weight: lighter;
@@ -8,7 +8,7 @@ h1{
     align-items: center;
 }
 
-h2{
+h2 {
     color: #041E02;
     font-size: 2rem;
     font-family: 'Raleway';
@@ -17,62 +17,78 @@ h2{
     align-items: center;
 }
 
-.mainIndex h1{
-    color: #345911;
-    font-size: 6rem;
-    text-align: center;
-    font-weight: lighter;
-    font-family: 'Clicker Script', cursive;
+.mainIndex {
+    h1 {
+        color: #345911;
+        font-size: 6rem;
+        text-align: center;
+        font-weight: lighter;
+        font-family: 'Clicker Script', cursive;
+    }
+
+    h2 {
+        color: #345911;
+        width: 45%;
+        font-size: 1rem;
+        font-family: 'Raleway';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.mainIndex h2{
-    color: #345911;
-    width:45%;
-    font-size: 1rem;
-    font-family: 'Raleway';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.h2Conocenos{
+.h2Conocenos {
     margin: 3rem 3rem 0rem 5rem;
 }
 
-.sabias h2 {
-    width: 100%;
-    padding: 1rem;
-    margin-left: 15rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+.sabias {
+    h2 {
+        width: 100%;
+        padding: 1rem;
+        margin-left: 15rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }
 
-.mates h2{
-    margin-left: 3rem;
+.mates {
+    h2 {
+        margin-left: 3rem;
+    }
+
+    div {
+        h3 {
+            color: #041E02;
+        }
+    }
 }
 
-.mates div h3{
-    color: #041E02;
+.cuencos {
+    h2 {
+        margin-left: 3rem;
+    }
+
+    div {
+        h3 {
+            color: #041E02;
+        }
+    }
 }
 
-.cuencos h2{
-    margin-left: 3rem;
-}
+.contactame {
+    h2 {
+        width: 85%;
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
 
-.cuencos div h3{
-    color: #041E02;
-}
-
-.contactame h2{
-    width: 85%;
-    font-size: 2rem;
-    margin-left: 3rem;
-}
-
-.contForm h3{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 400;
-    color: #FF6333
+    .contForm {
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            color: #FF6333
+        }
+    }
 }
