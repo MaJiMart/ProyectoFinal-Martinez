@@ -46,17 +46,18 @@
 
 .redes {
     i {
-    color: grey;
-    margin: 0.5rem 0.5rem 0rem 1.5rem;
-    width: 3rem;
-    height: auto;
-    cursor: pointer;
-    &:hover {
-        color: #345911;
+        color: $border;
+        margin: 0.5rem 0.5rem 0rem 1.5rem;
+        width: 3rem;
+        height: auto;
+        cursor: pointer;
+
+        &:hover {
+            color: $text;
+        }
     }
-}
 }
 
 .redes i:hover {
-    color: #345911;
+    color: $text;
 }

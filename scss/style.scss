@@ -1,9 +1,10 @@
 @import "./variables/colors";
+/*tipos de fuentes de la web*/
+@import "./variables/font";
 @import "./reset/reset";
 @import "./layout/grids";
 @import "./components/body";
 @import "./components/header";
-@import "./components/main";
 /*estilod de todos los contenedores*/
 @import "./components/boxes";
 /*estilos de todas las etiquetas h*/

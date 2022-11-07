@@ -2,7 +2,7 @@
     .estructura {
         display: grid;
         grid-template-areas: "header"
-            "main";
+                             "main";
         grid-template-rows: 1fr 10fr;
     }
 

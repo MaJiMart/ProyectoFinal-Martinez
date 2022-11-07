@@ -1,3 +1,17 @@
+@charset "UTF-8";
+
+/*color texto de la nav*/
+/*etiquetas h1, h2 y texto de cards y footer*/
+/*textos de la web*/
+/*boton enviar y menu desplegable*/
+/*llamativo - usado en los h3, boton de enviar y línea separación*/
+/*bordes de formulario*/
+/*footer background-color*/
+/*cards background-color*/
+/*menu background-color*/
+/*hover boton enviar*/
+/*fuente general de la web*/
+/*fuente cursiva para titulos*/
 * {
   margin: 0;
   padding: 0;
@@ -22,15 +36,18 @@ header {
   align-items: center;
   grid-area: header;
 }
+
 header img {
   width: 50%;
   margin-left: 3%;
 }
+
 header div {
   padding: 0.5rem;
   width: 45%;
   align-items: center;
 }
+
 header ul li {
   list-style-type: none;
   font-weight: 400;
@@ -39,16 +56,20 @@ header ul li {
   text-decoration: none;
   align-content: space-between;
 }
+
 header ul a {
   text-decoration: none;
   color: #B82312;
 }
+
 header ul a:hover {
   color: #041E02;
 }
+
 header nav {
   width: 100%;
 }
+
 header nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -148,7 +169,7 @@ main {
   align-items: center;
 }
 
-.izquierda {
+.contForm .izquierda {
   width: 50%;
   height: 100%;
   padding: 2rem;
@@ -156,11 +177,11 @@ main {
   flex-direction: column;
 }
 
-.pedidos {
+.contForm .izquierda .pedidos {
   margin: 0rem 3rem 3rem 1rem;
 }
 
-.redes {
+.contForm .izquierda .redes {
   margin: 3rem 3rem 2rem 1rem;
   display: flex;
   flex-direction: column;
@@ -170,7 +191,7 @@ main {
 
 /*estilos de todas las etiquetas h*/
 h1 {
-  color: #345911;
+  color: #041E02;
   font-size: 3.5rem;
   font-weight: lighter;
   font-family: "Clicker Script", cursive;
@@ -189,7 +210,7 @@ h2 {
 }
 
 .mainIndex h1 {
-  color: #345911;
+  color: #041E02;
   font-size: 6rem;
   text-align: center;
   font-weight: lighter;
@@ -197,10 +218,11 @@ h2 {
 }
 
 .mainIndex h2 {
-  color: #345911;
+  color: #041E02;
   width: 45%;
   font-size: 1rem;
   font-family: "Raleway";
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,15 +263,16 @@ h2 {
   margin-left: 3rem;
 }
 
-.contForm h3 {
+.contactame .contForm h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 400;
   color: #FF6333;
 }
 
+/*conocenos.html*/
 .solana p {
-  color: #041E02;
+  color: #345911;
   margin: 2rem;
   font-size: 1.2rem;
   text-align: justify;
@@ -257,13 +280,14 @@ h2 {
 }
 
 .munay p {
-  color: #041E02;
+  color: #345911;
   margin: 2rem;
   font-size: 1.2rem;
   text-align: justify;
   line-height: 2.5rem;
 }
 
+/*productos.html*/
 .mates div p {
   color: #041E02;
   text-align: center;
@@ -274,6 +298,7 @@ h2 {
   text-align: center;
 }
 
+/*contactame.html*/
 .pedidos p {
   color: #345911;
   text-align: justify;
@@ -328,6 +353,10 @@ h2 {
   color: #345911;
 }
 
+.redes i:hover {
+  color: #345911;
+}
+
 .formulario {
   padding: 3rem;
   display: flex;
@@ -336,7 +365,8 @@ h2 {
   border-left: double 0.5rem #FF6333;
 }
 
-.contForm form .campo, textarea {
+.contForm form .campo,
+.contForm form textarea {
   width: 20rem;
   padding: 15px 10px;
   font-size: 1rem;
@@ -351,18 +381,6 @@ h2 {
   min-width: 20rem;
   min-height: 10rem;
   max-width: 12rem;
-}
-
-.contForm .btnEnviar {
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-  outline: 0;
-  background: #FF6333;
-  color: #EBDBC9;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 300ms ease;
 }
 
 .btnPedidos {
@@ -387,6 +405,18 @@ h2 {
   transform: scale(1.2);
 }
 
+.contForm .btnEnviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  background: #FF6333;
+  color: #EBDBC9;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
 .contForm .btnEnviar:hover {
   background: rgba(255, 99, 51, 0.5215686275);
 }
@@ -407,23 +437,10 @@ footer div {
 footer div p {
   align-items: center;
   line-height: 1.5rem;
-}
-
-.footerSabias div p {
-  line-height: 1rem;
-}
-
-footer ul li {
-  list-style-type: none;
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-}
-
-footer ul a {
-  text-decoration: none;
   color: #041E02;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
 }
 
 footer nav {
@@ -439,15 +456,25 @@ footer nav ul {
   align-items: center;
 }
 
-footer div p {
-  color: #041E02;
-  font-style: italic;
-  display: flex;
-  justify-content: center;
+footer nav ul li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
 }
 
-footer a:hover {
+footer nav ul li a {
+  text-decoration: none;
+  color: #041E02;
+}
+
+footer nav ul li a:hover {
   color: #B82312;
+}
+
+.footerSabias div p {
+  line-height: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -456,29 +483,36 @@ footer a:hover {
     grid-template-areas: "header" "main";
     grid-template-rows: 1fr 10fr;
   }
+
   footer {
     display: none;
   }
+
   .carousel {
     width: 80%;
   }
+
   .sabias h2 {
     width: 90%;
     margin: 0;
     padding: 1rem;
     margin-left: 4rem;
   }
+
   .cuencos div {
     margin-left: 4rem;
   }
 }
+
 @media screen and (max-width: 768px) {
-  #menuCheck:not(:checked) ~ nav {
+  #menuCheck:not(:checked)~nav {
     display: none;
   }
-  #menuCheck:checked ~ nav {
+
+  #menuCheck:checked~nav {
     display: block;
   }
+
   #menu {
     display: block;
     color: #B82312;
@@ -486,18 +520,23 @@ footer a:hover {
     position: absolute;
     right: 2rem;
   }
+
   #menuCerrar {
     display: none;
   }
-  #menuCheck:checked ~ label #menuAbrir {
+
+  #menuCheck:checked~label #menuAbrir {
     display: none;
   }
-  #menuCheck:checked ~ label #menuCerrar {
+
+  #menuCheck:checked~label #menuCerrar {
     display: block;
   }
+
   header img {
     width: 70%;
   }
+
   header nav {
     position: absolute;
     top: 9rem;
@@ -509,6 +548,7 @@ footer a:hover {
     color: #EBDBC9;
     z-index: 9999;
   }
+
   header nav a {
     color: #EBDBC9;
     font-size: 1.5rem;
@@ -516,24 +556,30 @@ footer a:hover {
     padding: rem;
     line-height: 3rem;
   }
-  header nav ul, header nav ul li {
+
+  header nav ul,
+  header nav li {
     display: block;
     text-align: right;
     margin-top: 1.5rem;
   }
+
   .solana {
     display: block;
   }
+
   .solana div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .munay {
     margin-top: 0;
     display: block;
   }
+
   .munay div {
     margin: 0%;
     display: flex;
@@ -541,26 +587,32 @@ footer a:hover {
     justify-content: center;
     align-items: center;
   }
+
   .video {
     width: 90%;
   }
+
   .cuencos div {
     margin-left: 6rem;
   }
+
   .contForm {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .izquierda {
+
+  .contForm .izquierda {
     width: 90%;
     order: 2;
   }
-  .pedidos {
+
+  .contForm .izquierda .pedidos {
     margin: 1rem;
     order: 2;
   }
-  .redes {
+
+  .contForm .izquierda .redes {
     width: 100%;
     margin-top: 1rem;
     padding: 0;
@@ -568,43 +620,53 @@ footer a:hover {
     align-items: center;
     order: 1;
   }
-  .formulario {
+
+  .contForm .formulario {
     width: 90%;
     justify-content: flex-start;
     border: none;
     order: 1;
   }
-  .redes, .formulario {
+
+  .redes,
+  .formulario {
     display: flex;
     flex-direction: row;
   }
 }
+
 @media screen and (max-width: 480px) {
   .estructura {
     display: block;
   }
+
   #menu {
     font-size: 1.5rem;
   }
+
   header img {
     width: 90%;
   }
+
   header nav {
     top: 7rem;
     height: 40%;
     width: 40%;
   }
+
   header nav a {
     font-size: 1rem;
     margin: 1rem;
     padding: 1rem;
     line-height: 1rem;
   }
+
   .mainIndex h1 {
     color: #345911;
     font-size: 3rem;
     text-align: center;
   }
+
   .mainIndex h2 {
     color: #345911;
     width: 50%;
@@ -612,33 +674,36 @@ footer a:hover {
     font-size: 0.65rem;
     text-align: center;
   }
-  .btnPedidos button {
+
+  .mainIndex .btnPedidos button {
     padding: 0.5rem;
     width: 8rem;
     font-size: 1rem;
     border-radius: 5rem;
-  }
-  .btnPedidos button:hover {
-    transform: none;
-  }
-  main {
-    width: 100%;
     align-items: center;
   }
+
+  .mainIndex .btnPedidos button:hover {
+    transform: none;
+  }
+
   .solana {
     margin: 0;
     width: 90%;
     flex-direction: column;
   }
+
   .solana img {
     margin: 0;
     height: 18rem;
   }
+
   .solana p {
     margin: 0.5rem;
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
   .h2Conocenos {
     width: 100%;
     font-weight: 600;
@@ -646,35 +711,43 @@ footer a:hover {
     align-items: center;
     justify-content: center;
   }
+
   h2 {
     width: 85%;
     font-size: 1rem;
     text-align: center;
   }
+
   .h2Conocenos {
     margin: 0.5rem;
   }
+
   .munay {
     margin: 0;
     flex-direction: column;
     align-items: center;
   }
+
   .munay img {
     height: 20rem;
   }
+
   .munay p {
     margin: 1rem 2rem;
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
   .carousel {
     width: 90%;
   }
+
   .sabias h1 {
     width: 90%;
     font-size: 3rem;
     text-align: center;
   }
+
   .sabias h2 {
     width: 90%;
     padding: 0;
@@ -682,87 +755,109 @@ footer a:hover {
     text-align: center;
     font-size: 1.5rem;
   }
+
   .video {
     padding: 1rem;
     display: flex;
     justify-content: center;
   }
+
   .video iframe {
     width: 75%;
   }
+
   body h1 {
     width: 85%;
     font-size: 3rem;
     text-align: center;
   }
+
   .mates {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .mates div {
     margin: 0%;
   }
+
   .mates h2 {
     margin: 1.5rem;
     font-size: 1.5rem;
   }
+
   .cuencos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .cuencos div {
     margin: 0;
   }
+
   .cuencos h2 {
     margin: 1.5rem;
     font-size: 1.5rem;
   }
+
   .contactame h2 {
     width: 90%;
     margin: 0;
     font-size: 1.5rem;
   }
-  .contForm {
+
+  .contactame .contForm {
     width: 100%;
     margin: 0;
     padding: 0%;
   }
-  .pedidos {
+
+  .contactame .contForm h3 {
+    font-size: 1.2rem;
+  }
+
+  .contactame .contForm .izquierda {
+    width: 100%;
+    padding: 0%;
+    align-items: center;
+  }
+
+  .contactame .contForm .izquierda .pedidos {
     width: 90%;
     margin: 0;
     padding: 1rem;
   }
-  .redes {
+
+  .contactame .contForm .izquierda .redes {
     width: 90%;
     margin: 0;
     padding: 1rem;
   }
-  .formulario {
+
+  .contactame .contForm .izquierda .redes a {
+    font-size: 0.9rem;
+  }
+
+  .contactame .contForm .formulario {
     width: 100%;
     margin: 1rem 1rem 0rem 1rem;
     padding: 1rem;
     width: 90%;
   }
-  .contForm form .campo, textarea {
+
+  .contactame .contForm .formulario form .campo,
+  .contactame .contForm .formulario form textarea {
     width: 18rem;
   }
-  .contForm form textarea {
+
+  .contactame .contForm .formulario form textarea {
     max-width: 18rem;
     min-width: 18rem;
   }
-  .izquierda {
-    width: 100%;
-    padding: 0%;
-    align-items: center;
-  }
-  .contForm h3 {
-    font-size: 1.2rem;
-  }
-  .redes a {
-    font-size: 0.9rem;
-  }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

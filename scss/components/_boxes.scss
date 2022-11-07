@@ -1,4 +1,4 @@
-main{
+main {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@ main{
     grid-area: main;
 }
 
-.mainIndex{
+.mainIndex {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,14 +15,14 @@ main{
 }
 
 /*conocenos.html*/
-.solana{
+.solana {
     margin: 0rem 3rem 0rem 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.munay{
+.munay {
     margin: 0rem 3rem 0rem 3rem;
     display: flex;
     flex-direction: row;
@@ -30,75 +30,75 @@ main{
 }
 
 /*productos.html*/
-.mates{
+.mates {
     width: 100%;
+
+    div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        div {
+            background-color: $backcards;
+            width: 15rem;
+            height: 20rem;
+            margin: 3rem;
+            padding: 1rem;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 }
 
-.mates div{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.mates div div{
-    background-color: #ff633352;
-    width: 15rem;
-    height: 20rem;
-    margin: 3rem;
-    padding: 1rem;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cuencos{
+.cuencos {
     width: 100%;
+
+    div {
+        background-color: $backcards;
+        width: 15rem;
+        height: 20rem;
+        margin: 3rem 3rem 3rem 9rem;
+        padding: 1rem;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.cuencos div{
-    background-color: #ff633352;
-    width: 15rem;
-    height: 20rem;
-    margin: 3rem 3rem 3rem 9rem;
-    padding: 1rem;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.sabias{
+.sabias {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /*contactame.html*/
-.contForm{
+.contForm {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
 
-.izquierda{
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-}
+    .izquierda {
+        width: 50%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
 
-.pedidos{
-    margin: 0rem 3rem 3rem 1rem;
-}
+        .pedidos {
+            margin: 0rem 3rem 3rem 1rem;
+        }
 
-.redes{
-    margin: 3rem 3rem 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+        .redes {
+            margin: 3rem 3rem 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
 }
