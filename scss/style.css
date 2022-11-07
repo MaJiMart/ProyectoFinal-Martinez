@@ -19,11 +19,34 @@
   font-family: "Raleway", sans-serif;
 }
 
-.estructura {
+.estructuraIndex {
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 10fr 0.5fr;
+  grid-template-rows: 0.5fr 1.5fr 0.5fr;
+}
+
+.estructuraProductos {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 6fr 0.5fr;
+}
+
+.estructuraConocenos {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+}
+
+.estructuraSabias {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 6.5fr 0.5fr;
+}
+
+.estructuraContactame {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 3fr 0.5fr;
 }
 
 body {
@@ -444,7 +467,7 @@ footer nav ul li a:hover {
 }
 
 .footerSabias div p {
-  line-height: 1rem;
+  line-height: 0.5rem;
 }
 
 @media screen and (max-width: 1024px) {
