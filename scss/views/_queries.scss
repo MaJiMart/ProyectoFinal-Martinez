@@ -1,11 +1,4 @@
 @media screen and (max-width:1024px) {
-    .estructura {
-        display: grid;
-        grid-template-areas: "header"
-                             "main";
-        grid-template-rows: 1fr 10fr;
-    }
-
     footer {
         display: none;
     }
@@ -41,8 +34,8 @@
 
     #menu {
         display: block;
-        color: #B82312;
-        font-size: 3rem;
+        color: $navtext;
+        font-size: 2.5rem;
         position: absolute;
         right: 2rem;
     }
@@ -70,16 +63,16 @@
             right: 0;
             height: 40%;
             width: 35%;
-            background-color: #b82312d7;
+            background-color: $backmenu;
             border-radius: 10px;
-            color: #EBDBC9;
+            color: $light;
             z-index: 9999;
 
             a {
-                color: #EBDBC9;
+                color: $light;
                 font-size: 1.5rem;
                 margin: 2rem;
-                padding: rem;
+                padding: 1rem;
                 line-height: 3rem;
             }
 
@@ -100,6 +93,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    .h2Conocenos {
+        h2 {
+            text-align: center;
         }
     }
 
@@ -142,7 +141,7 @@
 
             .redes {
                 width: 100%;
-                margin-top: 1rem;
+                margin-bottom: 3vh;
                 padding: 0;
                 justify-content: flex-start;
                 align-items: center;
@@ -152,7 +151,9 @@
 
         .formulario {
             width: 90%;
-            justify-content: flex-start;
+            margin: 3rem 0 0 6rem;
+            padding: 0;
+            justify-content: center;
             border: none;
             order: 1;
         }
@@ -166,8 +167,39 @@
 }
 
 @media screen and (max-width:480px) {
-    .estructura {
-        display: block;
+    .estructuraIndex {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.5fr 2fr;
+    }
+
+    .estructuraProductos {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.1fr 6fr;
+    }
+
+    .estructuraConocenos {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.1fr 4fr;
+    }
+
+    .estructuraSabias {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.5fr 6.5fr;
+    }
+
+    .estructuraContactame {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.5fr 3fr;
     }
 
     #menu {
@@ -180,9 +212,10 @@
         }
 
         nav {
-            top: 7rem;
-            height: 40%;
-            width: 40%;
+            top: 15vh;
+            height: 40vh;
+            width: 50vw;
+            text-align: right;
 
             a {
                 font-size: 1rem;
@@ -195,13 +228,14 @@
 
     .mainIndex {
         h1 {
-            color: #345911;
+            color: $tittles;
+            margin: 0;
             font-size: 3rem;
             text-align: center;
         }
 
         h2 {
-            color: #345911;
+            color: $tittles;
             width: 50%;
             margin-top: 1rem;
             font-size: 0.65rem;
@@ -223,25 +257,47 @@
         }
     }
 
+    main {
+        h1 {
+            margin-left: 2rem;
+            text-align: center;
+        }
+    }
+
     .solana {
         margin: 0;
-        width: 90%;
+        width: 100%;
+        display: flex;
         flex-direction: column;
 
-        img {
-            margin: 0;
-            height: 18rem;
+        div {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin: 0;
+                height: 18rem;
+            }
         }
 
-        p {
-            margin: 0.5rem;
-            font-size: 1rem;
-            line-height: 1.5rem;
+        div {
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                width: 100%;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
         }
     }
 
     .h2Conocenos {
-        width: 100%;
+        margin: 0;
+        padding: 0;
+        width: 95%;
         font-weight: 600;
         display: flex;
         align-items: center;
@@ -347,7 +403,7 @@
     .contactame {
         h2 {
             width: 90%;
-            margin: 0;
+            margin-left: 6vw;
             font-size: 1.5rem;
         }
 

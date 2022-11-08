@@ -471,11 +471,6 @@ footer nav ul li a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .estructura {
-    display: grid;
-    grid-template-areas: "header" "main";
-    grid-template-rows: 1fr 10fr;
-  }
   footer {
     display: none;
   }
@@ -502,7 +497,7 @@ footer nav ul li a:hover {
   #menu {
     display: block;
     color: #B82312;
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: absolute;
     right: 2rem;
   }
@@ -533,7 +528,7 @@ footer nav ul li a:hover {
     color: #EBDBC9;
     font-size: 1.5rem;
     margin: 2rem;
-    padding: rem;
+    padding: 1rem;
     line-height: 3rem;
   }
   header nav ul,
@@ -550,6 +545,9 @@ header nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .h2Conocenos h2 {
+    text-align: center;
   }
   .munay {
     margin-top: 0;
@@ -583,7 +581,7 @@ header nav li {
   }
   .contForm .izquierda .redes {
     width: 100%;
-    margin-top: 1rem;
+    margin-bottom: 3vh;
     padding: 0;
     justify-content: flex-start;
     align-items: center;
@@ -591,7 +589,9 @@ header nav li {
   }
   .contForm .formulario {
     width: 90%;
-    justify-content: flex-start;
+    margin: 3rem 0 0 6rem;
+    padding: 0;
+    justify-content: center;
     border: none;
     order: 1;
   }
@@ -602,8 +602,30 @@ header nav li {
   }
 }
 @media screen and (max-width: 480px) {
-  .estructura {
-    display: block;
+  .estructuraIndex {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.5fr 2fr;
+  }
+  .estructuraProductos {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.1fr 6fr;
+  }
+  .estructuraConocenos {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.1fr 4fr;
+  }
+  .estructuraSabias {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.5fr 6.5fr;
+  }
+  .estructuraContactame {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.5fr 3fr;
   }
   #menu {
     font-size: 1.5rem;
@@ -612,9 +634,10 @@ header nav li {
     width: 90%;
   }
   header nav {
-    top: 7rem;
-    height: 40%;
-    width: 40%;
+    top: 15vh;
+    height: 40vh;
+    width: 50vw;
+    text-align: right;
   }
   header nav a {
     font-size: 1rem;
@@ -623,12 +646,13 @@ header nav li {
     line-height: 1rem;
   }
   .mainIndex h1 {
-    color: #345911;
+    color: #041E02;
+    margin: 0;
     font-size: 3rem;
     text-align: center;
   }
   .mainIndex h2 {
-    color: #345911;
+    color: #041E02;
     width: 50%;
     margin-top: 1rem;
     font-size: 0.65rem;
@@ -644,22 +668,39 @@ header nav li {
   .mainIndex .btnPedidos button:hover {
     transform: none;
   }
+  main h1 {
+    margin-left: 2rem;
+    text-align: center;
+  }
   .solana {
     margin: 0;
-    width: 90%;
+    width: 100%;
+    display: flex;
     flex-direction: column;
   }
-  .solana img {
+  .solana div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .solana div img {
     margin: 0;
     height: 18rem;
   }
-  .solana p {
-    margin: 0.5rem;
+  .solana div {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .solana div p {
+    width: 100%;
     font-size: 1rem;
     line-height: 1.5rem;
   }
   .h2Conocenos {
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 95%;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -742,7 +783,7 @@ header nav li {
   }
   .contactame h2 {
     width: 90%;
-    margin: 0;
+    margin-left: 6vw;
     font-size: 1.5rem;
   }
   .contactame .contForm {
