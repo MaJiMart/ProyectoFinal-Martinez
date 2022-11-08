@@ -40,11 +40,11 @@ main {
 
         div {
             background-color: $backcards;
-            width: 15rem;
-            height: 20rem;
-            margin: 3rem;
-            padding: 1rem;
-            border-radius: 5%;
+            width: map-get($cardstyle, width);
+            height: map-get($cardstyle, height);
+            margin: map-get($cardstyle, marginMates);
+            padding: map-get($cardstyle, padding);
+            border-radius: map-get($cardstyle, border-radius);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -58,11 +58,11 @@ main {
 
     div {
         background-color: $backcards;
-        width: 15rem;
-        height: 20rem;
-        margin: 3rem 3rem 3rem 8.5rem;
-        padding: 1rem;
-        border-radius: 5%;
+        width: map-get($cardstyle, width);
+        height: map-get($cardstyle, height);
+        margin: map-get($cardstyle, marginCuencos);
+        padding: map-get($cardstyle, padding);
+        border-radius: map-get($cardstyle, border-radius);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
