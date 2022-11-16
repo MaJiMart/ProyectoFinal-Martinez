@@ -4,6 +4,7 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     grid-area: footer;
+    height: 25vh;
 
     div {
         width: 100%;
@@ -53,6 +54,7 @@ footer {
 }
 
 .footerSabias {
+    height: 30vh;
     div {
         p {
             line-height: 0.5rem;

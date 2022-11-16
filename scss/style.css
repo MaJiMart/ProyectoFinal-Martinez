@@ -58,6 +58,7 @@ header {
   display: flex;
   align-items: center;
   grid-area: header;
+  height: 25vh;
 }
 header img {
   width: 50%;
@@ -114,6 +115,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: 50vh;
 }
 
 /*conocenos.html*/
@@ -427,6 +429,7 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   grid-area: footer;
+  height: 25vh;
 }
 footer div {
   width: 100%;
@@ -466,6 +469,9 @@ footer nav ul li a:hover {
   color: #B82312;
 }
 
+.footerSabias {
+  height: 30vh;
+}
 .footerSabias div p {
   line-height: 0.5rem;
 }
