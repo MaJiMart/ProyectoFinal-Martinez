@@ -397,8 +397,8 @@ h2 {
   width: 15rem;
   font-size: 1.3rem;
   border-radius: 5rem;
-  border-style: solid;
   border-color: #345911;
+  border-style: solid;
 }
 .btnPedidos button a {
   color: #345911;

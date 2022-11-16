@@ -4,3 +4,17 @@
     font-family: $fontFamily;
     font-weight: lighter; 
 }
+
+@mixin button ($color) {
+    border-color: $color;
+
+    @if $color == $text {
+        border-style: solid;
+    }
+    @else if $color == $jazzy {
+        border-style: dotted;
+    }
+    @else {
+        border-style: none;
+    }
+}
