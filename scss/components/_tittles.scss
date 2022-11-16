@@ -1,18 +1,12 @@
 h1 {
-    color: $tittles;
-    font-size: 3.5rem;
-    font-weight: lighter;
-    font-family: $italic;
+    @include tittleStyle ($tittles, 3.5rem, $italic);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 h2 {
-    color: $tittles;
-    font-size: 2rem;
-    font-family: $webfont;
-    font-weight: lighter;
+    @include tittleStyle($tittles, 2rem, $webfont);
     display: flex;
     align-items: center;
 }

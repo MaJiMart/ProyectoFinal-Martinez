@@ -205,8 +205,8 @@ main {
 h1 {
   color: #041E02;
   font-size: 3.5rem;
-  font-weight: lighter;
   font-family: "Clicker Script", cursive;
+  font-weight: lighter;
   display: flex;
   justify-content: center;
   align-items: center;
