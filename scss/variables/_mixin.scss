@@ -11,10 +11,10 @@
     @if $color == $text {
         border-style: solid;
     }
-    @else if $color == $jazzy {
+    @else if $color == $tittles {
         border-style: dotted;
     }
     @else {
-        border-style: none;
+        border-style: dashed;
     }
 }
