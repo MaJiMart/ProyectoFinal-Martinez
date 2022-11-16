@@ -12,7 +12,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 50vh;    
+    height: 50vh;
 }
 
 /*conocenos.html*/
@@ -34,12 +34,12 @@ main {
 .mates {
     width: 100%;
 
-    div {
+    .boxMates {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
 
-        div {
+        .cardMates {
             background-color: $backcards;
             width: map-get($cardstyle, width);
             height: map-get($cardstyle, height);
@@ -50,24 +50,20 @@ main {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            img{
+                border-radius: 5px;
+            }
         }
     }
 }
 
 .cuencos {
-    width: 100%;
-
-    div {
-        background-color: $backcards;
-        width: map-get($cardstyle, width);
-        height: map-get($cardstyle, height);
-        margin: map-get($cardstyle, marginCuencos);
-        padding: map-get($cardstyle, padding);
-        border-radius: map-get($cardstyle, border-radius);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+    @extend .mates;
+    .boxCuencos{
+        @extend .boxMates;
+        .cardCuencos{
+            @extend .cardMates;
+        }
     }
 }
 

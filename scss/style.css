@@ -100,7 +100,7 @@ header nav ul {
   display: none;
 }
 
-/*estilod de todos los contenedores*/
+/*estilos de todos los contenedores*/
 main {
   height: 100%;
   display: flex;
@@ -134,15 +134,15 @@ main {
 }
 
 /*productos.html*/
-.mates {
+.mates, .cuencos {
   width: 100%;
 }
-.mates div {
+.mates .boxMates, .cuencos .boxMates, .cuencos .boxCuencos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.mates div div {
+.mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
   background-color: rgba(255, 99, 51, 0.3215686275);
   width: 15rem;
   height: 20rem;
@@ -154,21 +154,8 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-
-.cuencos {
-  width: 100%;
-}
-.cuencos div {
-  background-color: rgba(255, 99, 51, 0.3215686275);
-  width: 15rem;
-  height: 20rem;
-  margin: 3rem 3rem 3rem 8.5rem;
-  padding: 1rem;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.mates .boxMates .cardMates img, .cuencos .boxMates .cardMates img, .cuencos .boxCuencos .cardMates img, .cuencos .boxCuencos .cardCuencos img {
+  border-radius: 5px;
 }
 
 .sabias {
@@ -252,10 +239,10 @@ h2 {
   align-items: flex-start;
 }
 
-.mates h2 {
+.mates h2, .cuencos h2 {
   margin-left: 3rem;
 }
-.mates div h3 {
+.mates div h3, .cuencos div h3 {
   color: #041E02;
 }
 
@@ -296,7 +283,7 @@ h2 {
 }
 
 /*productos.html*/
-.mates div p {
+.mates div p, .cuencos div p {
   color: #041E02;
   text-align: center;
 }
@@ -339,7 +326,7 @@ h2 {
   justify-content: center;
 }
 
-.mates div img {
+.mates div img, .cuencos div img {
   width: auto;
   height: 10rem;
 }
@@ -399,6 +386,7 @@ h2 {
   border-radius: 5rem;
   border-color: #345911;
   border-style: solid;
+  cursor: pointer;
 }
 .btnPedidos button a {
   color: #345911;
@@ -761,16 +749,16 @@ header nav li {
     font-size: 3rem;
     text-align: center;
   }
-  .mates {
+  .mates, .cuencos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .mates div {
+  .mates div, .cuencos div {
     margin: 0%;
   }
-  .mates h2 {
+  .mates h2, .cuencos h2 {
     margin: 1.5rem;
     font-size: 1.5rem;
   }
