@@ -543,32 +543,36 @@ footer nav ul li a:hover {
   #menuCheck:checked ~ label #menuCerrar {
     display: block;
   }
-  header img {
-    width: 70%;
+  header div img {
+    width: 40vw;
   }
   header nav {
     position: absolute;
     top: 9rem;
     right: 0;
-    height: 40%;
-    width: 35%;
+    height: 50vh;
+    width: 35vw;
     background-color: rgba(184, 35, 18, 0.8431372549);
     border-radius: 10px;
     color: #EBDBC9;
     z-index: 9999;
   }
-  header nav a {
+  header nav ul {
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+  }
+  header nav ul li {
+    display: block;
+    text-align: right;
+    margin-top: 3rem;
+  }
+  header nav ul li a {
     color: #EBDBC9;
     font-size: 1.5rem;
     margin: 2rem;
     padding: 1rem;
     line-height: 3rem;
-  }
-  header nav ul,
-header nav li {
-    display: block;
-    text-align: right;
-    margin-top: 1.5rem;
   }
   main {
     height: 50vh;
@@ -680,16 +684,19 @@ header nav li {
   #menu {
     font-size: 1.5rem;
   }
-  header img {
-    width: 90%;
+  header div img {
+    width: 60vw;
   }
   header nav {
     top: 15vh;
-    height: 40vh;
+    height: 43vh;
     width: 50vw;
     text-align: right;
   }
-  header nav a {
+  header nav ul li {
+    margin-top: 1.7rem;
+  }
+  header nav ul li a {
     font-size: 1rem;
     margin: 1rem;
     padding: 1rem;
