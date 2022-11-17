@@ -504,7 +504,6 @@ footer nav ul li a:hover {
     height: 45vh;
     margin: 2rem;
     padding: 1rem;
-    border-radius: 20px;
   }
   .carousel {
     width: 80%;
@@ -582,8 +581,6 @@ footer nav ul li a:hover {
     width: 40vw;
     height: 40vh;
     margin: 2rem;
-    padding: 1rem;
-    border-radius: 20px;
   }
   .solana {
     display: block;
@@ -733,8 +730,6 @@ footer nav ul li a:hover {
     width: 80vw;
     height: 60vh;
     margin: 4rem;
-    padding: 1rem;
-    border-radius: 20px;
   }
   .mates .boxMates .cardMates img, .cuencos .boxMates .cardMates img, .cuencos .boxCuencos .cardMates img, .cuencos .boxCuencos .cardCuencos img {
     height: 35vh;

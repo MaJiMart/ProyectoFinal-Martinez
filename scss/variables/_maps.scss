@@ -13,7 +13,6 @@ $cardStyleQueryL: (
     height: 45vh,
     margin: 2rem,
     padding: 1rem,
-    border-radius: 20px,
 );
 
 /*para Media Query de 768*/
@@ -21,8 +20,6 @@ $cardStyleQueryM: (
     width: 40vw,
     height: 40vh,
     margin: 2rem,
-    padding: 1rem,
-    border-radius: 20px,
 );
 
 /*para Media Query de 480*/
@@ -30,6 +27,4 @@ $cardStyleQueryS: (
     width: 80vw,
     height: 60vh,
     margin: 4rem,
-    padding: 1rem,
-    border-radius: 20px,
 );

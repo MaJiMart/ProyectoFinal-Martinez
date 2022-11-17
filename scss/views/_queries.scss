@@ -18,7 +18,6 @@
                 height: map-get($cardStyleQueryL, height);
                 margin: map-get($cardStyleQueryL, margin);
                 padding: map-get($cardStyleQueryL, padding);
-                border-radius: map-get($cardStyleQueryL, border-radius);
             }
         }
     }
@@ -125,8 +124,6 @@
                 width: map-get($cardStyleQueryM, width);
                 height: map-get($cardStyleQueryM, height);
                 margin: map-get($cardStyleQueryM, margin);
-                padding: map-get($cardStyleQueryM, padding);
-                border-radius: map-get($cardStyleQueryM, border-radius);
             }
         }
     }
@@ -329,8 +326,6 @@
                 width: map-get($cardStyleQueryS, width);
                 height: map-get($cardStyleQueryS, height);
                 margin: map-get($cardStyleQueryS, margin);
-                padding: map-get($cardStyleQueryS, padding);
-                border-radius: map-get($cardStyleQueryS, border-radius);
 
                 img {
                     height: 35vh;
