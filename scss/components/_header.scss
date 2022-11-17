@@ -5,15 +5,15 @@ header {
     height: 25vh;
     width: 98.5vw;
 
-    img {
-        width: 50%;
-        margin-left: 1vw;
-    }
-
     div {
         padding: 0.5rem;
         width: 45%;
         align-items: center;
+
+        img {
+            width: 15vw;
+            margin-left: 1vw;
+        }
     }
 
     ul {

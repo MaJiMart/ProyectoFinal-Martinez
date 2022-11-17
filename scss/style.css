@@ -65,14 +65,14 @@ header {
   height: 25vh;
   width: 98.5vw;
 }
-header img {
-  width: 50%;
-  margin-left: 1vw;
-}
 header div {
   padding: 0.5rem;
   width: 45%;
   align-items: center;
+}
+header div img {
+  width: 15vw;
+  margin-left: 1vw;
 }
 header ul li {
   list-style-type: none;
