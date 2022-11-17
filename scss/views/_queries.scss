@@ -1,6 +1,14 @@
 @media screen and (max-width:1024px) {
     footer {
         display: none;
+
+    }
+
+    .mainIndex {
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .carousel {
@@ -16,14 +24,16 @@
         }
     }
 
-    .cuencos {
-        div {
-            margin-left: 4rem;
+    .contForm {
+        .formulario {
+            height: 100%;
         }
     }
 }
 
 @media screen and (max-width:768px) {
+
+    /*menu hamburguesa*/
     #menuCheck:not(:checked)~nav {
         display: none;
     }
@@ -85,6 +95,10 @@
         }
     }
 
+    main {
+        height: 60vh;
+    }
+
     .solana {
         display: block;
 
@@ -117,12 +131,6 @@
 
     .video {
         width: 90%;
-    }
-
-    .cuencos {
-        div {
-            margin-left: 6rem;
-        }
     }
 
     .contForm {
@@ -287,7 +295,7 @@
             align-items: center;
 
             p {
-                width: 100%;
+                width: 90%;
                 font-size: 1rem;
                 line-height: 1.5rem;
             }
@@ -374,12 +382,14 @@
         align-items: center;
         justify-content: center;
 
-        div {
-            margin: 0%;
+        .boxMates {
+            .cardMates {
+                margin: 1rem;
+            }
         }
 
         h2 {
-            margin: 1.5rem;
+            margin: 1rem;
             font-size: 1.5rem;
         }
     }
@@ -390,7 +400,7 @@
         align-items: center;
         justify-content: center;
 
-        div {
+        .boxCuenos {
             margin: 0
         }
 

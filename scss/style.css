@@ -468,6 +468,12 @@ footer nav ul li a:hover {
   footer {
     display: none;
   }
+  .mainIndex {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .carousel {
     width: 80%;
   }
@@ -477,11 +483,12 @@ footer nav ul li a:hover {
     padding: 1rem;
     margin-left: 4rem;
   }
-  .cuencos div {
-    margin-left: 4rem;
+  .contForm .formulario {
+    height: 100%;
   }
 }
 @media screen and (max-width: 768px) {
+  /*menu hamburguesa*/
   #menuCheck:not(:checked) ~ nav {
     display: none;
   }
@@ -531,6 +538,9 @@ header nav li {
     text-align: right;
     margin-top: 1.5rem;
   }
+  main {
+    height: 60vh;
+  }
   .solana {
     display: block;
   }
@@ -556,9 +566,6 @@ header nav li {
   }
   .video {
     width: 90%;
-  }
-  .cuencos div {
-    margin-left: 6rem;
   }
   .contForm {
     display: flex;
@@ -687,7 +694,7 @@ header nav li {
     align-items: center;
   }
   .solana div p {
-    width: 100%;
+    width: 90%;
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -755,11 +762,11 @@ header nav li {
     align-items: center;
     justify-content: center;
   }
-  .mates div, .cuencos div {
-    margin: 0%;
+  .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+    margin: 1rem;
   }
   .mates h2, .cuencos h2 {
-    margin: 1.5rem;
+    margin: 1rem;
     font-size: 1.5rem;
   }
   .cuencos {
@@ -768,7 +775,7 @@ header nav li {
     align-items: center;
     justify-content: center;
   }
-  .cuencos div {
+  .cuencos .boxCuenos {
     margin: 0;
   }
   .cuencos h2 {
