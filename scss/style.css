@@ -74,21 +74,6 @@ header div img {
   width: 15vw;
   margin-left: 1vw;
 }
-header ul li {
-  list-style-type: none;
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  align-content: space-between;
-}
-header ul a {
-  text-decoration: none;
-  color: #B82312;
-}
-header ul a:hover {
-  color: #041E02;
-}
 header nav {
   width: 97vw;
 }
@@ -97,6 +82,21 @@ header nav ul {
   justify-content: space-evenly;
   width: 100%;
   align-items: center;
+}
+header nav ul li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  align-content: space-between;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #B82312;
+}
+header nav ul li a:hover {
+  color: #041E02;
 }
 
 /*menu hamburguesa*/

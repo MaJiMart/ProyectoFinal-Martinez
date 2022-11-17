@@ -16,26 +16,6 @@ header {
         }
     }
 
-    ul {
-        li {
-            list-style-type: none;
-            font-weight: 400;
-            font-size: 1rem;
-            text-align: center;
-            text-decoration: none;
-            align-content: space-between;
-        }
-
-        a {
-            text-decoration: none;
-            color: $navtext;
-
-            &:hover {
-                color: $tittles;
-            }
-        }
-    }
-
     nav {
         width: 97vw;
 
@@ -44,6 +24,25 @@ header {
             justify-content: space-evenly;
             width: 100%;
             align-items: center;
+
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 1rem;
+                text-align: center;
+                text-decoration: none;
+                align-content: space-between;
+
+                a {
+                    text-decoration: none;
+                    color: $navtext;
+
+                    &:hover {
+                        color: $tittles;
+                    }
+                }
+            }
+
         }
     }
 }
