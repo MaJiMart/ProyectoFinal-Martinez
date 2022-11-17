@@ -17,14 +17,14 @@ main {
 
 /*conocenos.html*/
 .solana {
-    margin: 0rem 3rem 0rem 3rem;
+    margin: 0 3vw 0 3vw;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .munay {
-    margin: 0rem 3rem 0rem 3rem;
+    margin: 0 3vw 0 3vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +32,7 @@ main {
 
 /*productos.html*/
 .mates {
-    width: 100%;
+    width: 98.9vw;
 
     .boxMates {
         display: flex;
@@ -41,17 +41,17 @@ main {
 
         .cardMates {
             background-color: $backcards;
-            width: map-get($cardstyle, width);
-            height: map-get($cardstyle, height);
-            margin: map-get($cardstyle, marginMates);
-            padding: map-get($cardstyle, padding);
-            border-radius: map-get($cardstyle, border-radius);
+            width: map-get($cardStyle, width);
+            height: map-get($cardStyle, height);
+            margin: map-get($cardStyle, margin);
+            padding: map-get($cardStyle, padding);
+            border-radius: map-get($cardStyle, border-radius);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             img{
-                border-radius: 5px;
+                border-radius: 10px;
             }
         }
     }
@@ -68,6 +68,7 @@ main {
 }
 
 .sabias {
+    width: 99vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,6 +76,7 @@ main {
 
 /*contactame.html*/
 .contForm {
+    height: 80vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,11 +89,11 @@ main {
         flex-direction: column;
 
         .pedidos {
-            margin: 0rem 3rem 3rem 1rem;
+            margin: 0 3vw 3vh 1vw;
         }
 
         .redes {
-            margin: 3rem 3rem 2rem 1rem;
+            margin: 3vh 3vw 2vh 1vw;
             display: flex;
             flex-direction: column;
             align-items: flex-end;

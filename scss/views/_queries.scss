@@ -11,6 +11,18 @@
         align-items: center;
     }
 
+    .mates {
+        .boxMates {
+            .cardMates {
+                width: map-get($cardStyleQueryL, width);
+                height: map-get($cardStyleQueryL, height);
+                margin: map-get($cardStyleQueryL, margin);
+                padding: map-get($cardStyleQueryL, padding);
+                border-radius: map-get($cardStyleQueryL, border-radius);
+            }
+        }
+    }
+
     .carousel {
         width: 80%;
     }
@@ -96,22 +108,41 @@
     }
 
     main {
-        height: 60vh;
+        height: 50vh;
+        width: 96vw;
+    }
+
+    .mates {
+        .boxMates {
+            .cardMates {
+                width: map-get($cardStyleQueryM, width);
+                height: map-get($cardStyleQueryM, height);
+                margin: map-get($cardStyleQueryM, margin);
+                padding: map-get($cardStyleQueryM, padding);
+                border-radius: map-get($cardStyleQueryM, border-radius);
+            }
+        }
     }
 
     .solana {
         display: block;
 
         div {
+            width: 96vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            p {
+                font-size: 1.5rem;
+            }
         }
     }
 
     .h2Conocenos {
         h2 {
+            width: 85vw;
             text-align: center;
         }
     }
@@ -121,16 +152,17 @@
         display: block;
 
         div {
+            width: 96vw;
             margin: 0%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-    }
 
-    .video {
-        width: 90%;
+            p {
+                font-size: 1.5rem;
+            }
+        }
     }
 
     .contForm {
@@ -145,6 +177,10 @@
             .pedidos {
                 margin: 1rem;
                 order: 2;
+
+                p {
+                    font-size: 1.5rem;
+                }
             }
 
             .redes {
@@ -272,6 +308,22 @@
         }
     }
 
+    .mates {
+        .boxMates {
+            .cardMates {
+                width: map-get($cardStyleQueryS, width);
+                height: map-get($cardStyleQueryS, height);
+                margin: map-get($cardStyleQueryS, margin);
+                padding: map-get($cardStyleQueryS, padding);
+                border-radius: map-get($cardStyleQueryS, border-radius);
+
+                img {
+                    height: 35vh;
+                }
+            }
+        }
+    }
+
     .solana {
         margin: 0;
         width: 100%;
@@ -327,14 +379,18 @@
         flex-direction: column;
         align-items: center;
 
-        img {
-            height: 20rem;
+        div {
+            img {
+                height: 20rem;
+            }
         }
 
-        p {
-            margin: 1rem 2rem;
-            font-size: 1rem;
-            line-height: 1.5rem;
+        div {
+            p {
+                margin: 1rem 2rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
         }
     }
 
@@ -362,10 +418,6 @@
         padding: 1rem;
         display: flex;
         justify-content: center;
-
-        iframe {
-            width: 75%;
-        }
     }
 
     body {
@@ -394,79 +446,50 @@
         }
     }
 
-    .cuencos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+.contactame{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contForm {
+        margin: 2vh 0 0 0;
+        padding: 0;
 
-        .boxCuenos {
-            margin: 0
-        }
+        .izquierda {
+            width: 95vw;
+            order: 2;
 
-        h2 {
-            margin: 1.5rem;
-            font-size: 1.5rem;
-        }
-    }
-
-    .contactame {
-        h2 {
-            width: 90%;
-            margin-left: 6vw;
-            font-size: 1.5rem;
-        }
-
-        .contForm {
-            width: 100%;
-            margin: 0;
-            padding: 0%;
-
-            h3 {
-                font-size: 1.2rem;
-            }
-
-            .izquierda {
-                width: 100%;
-                padding: 0%;
+            .pedidos {
+                width: 80vw;
+                margin: 0;
+                padding: 0;
                 align-items: center;
 
-                .pedidos {
-                    width: 90%;
-                    margin: 0;
-                    padding: 1rem;
-                }
 
-                .redes {
-                    width: 90%;
-                    margin: 0;
-                    padding: 1rem;
-
-                    a {
-                        font-size: 0.9rem;
-                    }
+                p {
+                    font-size: 1rem;
                 }
             }
-
-            .formulario {
-                width: 100%;
-                margin: 1rem 1rem 0rem 1rem;
-                padding: 1rem;
-                width: 90%;
-
-                form {
-
-                    .campo,
-                    textarea {
-                        width: 18rem;
-                    }
-
-                    textarea {
-                        max-width: 18rem;
-                        min-width: 18rem;
+            .redes{
+                margin: 0 0 6vh 0;
+                div{
+                    a{
+                        margin: 1.5rem;
                     }
                 }
             }
         }
+
+        .formulario {
+            margin: 0;
+            padding: 0;
+        }
     }
+
+    .redes,
+    .formulario {
+        display: flex;
+        flex-direction: row;
+    }
+}
 }

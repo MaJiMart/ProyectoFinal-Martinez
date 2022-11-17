@@ -12,6 +12,10 @@
 /*tipos de fuentes de la web*/
 /*fuente general de la web*/
 /*fuente cursiva para titulos*/
+/*estilos para cards*/
+/*para Media Query de 1024*/
+/*para Media Query de 768*/
+/*para Media Query de 480*/
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +55,7 @@
 
 body {
   background-image: url("../assets/img/background.png");
-  width: 100%;
+  width: 98.9vw;
 }
 
 header {
@@ -59,10 +63,11 @@ header {
   align-items: center;
   grid-area: header;
   height: 25vh;
+  width: 98.5vw;
 }
 header img {
   width: 50%;
-  margin-left: 3%;
+  margin-left: 1vw;
 }
 header div {
   padding: 0.5rem;
@@ -85,7 +90,7 @@ header ul a:hover {
   color: #041E02;
 }
 header nav {
-  width: 100%;
+  width: 97vw;
 }
 header nav ul {
   display: flex;
@@ -120,14 +125,14 @@ main {
 
 /*conocenos.html*/
 .solana {
-  margin: 0rem 3rem 0rem 3rem;
+  margin: 0 3vw 0 3vw;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .munay {
-  margin: 0rem 3rem 0rem 3rem;
+  margin: 0 3vw 0 3vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -135,7 +140,7 @@ main {
 
 /*productos.html*/
 .mates, .cuencos {
-  width: 100%;
+  width: 98.9vw;
 }
 .mates .boxMates, .cuencos .boxMates, .cuencos .boxCuencos {
   display: flex;
@@ -144,10 +149,10 @@ main {
 }
 .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
   background-color: rgba(255, 99, 51, 0.3215686275);
-  width: 15rem;
-  height: 20rem;
+  width: 15vw;
+  height: 45vh;
   margin: 3rem;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -155,10 +160,11 @@ main {
   align-items: center;
 }
 .mates .boxMates .cardMates img, .cuencos .boxMates .cardMates img, .cuencos .boxCuencos .cardMates img, .cuencos .boxCuencos .cardCuencos img {
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .sabias {
+  width: 99vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,6 +172,7 @@ main {
 
 /*contactame.html*/
 .contForm {
+  height: 80vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,10 +185,10 @@ main {
   flex-direction: column;
 }
 .contForm .izquierda .pedidos {
-  margin: 0rem 3rem 3rem 1rem;
+  margin: 0 3vw 3vh 1vw;
 }
 .contForm .izquierda .redes {
-  margin: 3rem 3rem 2rem 1rem;
+  margin: 3vh 3vw 2vh 1vw;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -190,6 +197,7 @@ main {
 
 /*estilos de todas las etiquetas h*/
 h1 {
+  width: 90vw;
   color: #041E02;
   font-size: 3.5rem;
   font-family: "Clicker Script", cursive;
@@ -200,6 +208,7 @@ h1 {
 }
 
 h2 {
+  width: 90vw;
   color: #041E02;
   font-size: 2rem;
   font-family: "Raleway";
@@ -230,24 +239,28 @@ h2 {
   margin: 3rem 3rem 0rem 5rem;
 }
 
+.sabias h1 {
+  width: 90vw;
+}
 .sabias h2 {
-  width: 100%;
+  width: 90vw;
   padding: 1rem;
-  margin-left: 15rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
 
 .mates h2, .cuencos h2 {
-  margin-left: 3rem;
+  width: 80vw;
+  margin-left: 3vw;
 }
 .mates div h3, .cuencos div h3 {
   color: #041E02;
 }
 
 .cuencos h2 {
-  margin-left: 3rem;
+  width: 80vw;
+  margin-left: 3vw;
 }
 .cuencos div h3 {
   color: #041E02;
@@ -256,11 +269,11 @@ h2 {
 .contactame h2 {
   width: 85%;
   font-size: 2rem;
-  margin-left: 3rem;
+  margin-left: 3vw;
 }
 .contactame .contForm h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1vh;
   font-weight: 400;
   color: #FF6333;
 }
@@ -304,41 +317,48 @@ h2 {
 /*estilos de todo lo relacionado con fotos y videos*/
 .solana img {
   width: auto;
-  height: 20rem;
+  height: 45vh;
   border-radius: 20%;
   opacity: 85%;
 }
 
 .munay img {
   width: auto;
-  height: 20rem;
+  height: 45vh;
   border-radius: 20%;
 }
 
 .carousel {
   width: 50%;
-  margin: 0rem 0rem 2rem 0rem;
+  margin: 0 0 5vh 0;
 }
 
-.video {
-  padding: 1rem;
+.sabias {
+  width: 98vw;
+}
+.sabias .video {
+  padding: 1vh 0 5vh 0;
   display: flex;
   justify-content: center;
+}
+.sabias .video iframe {
+  width: 60vw;
+  border-radius: 10px;
 }
 
 .mates div img, .cuencos div img {
   width: auto;
-  height: 10rem;
+  height: 25vh;
 }
 
 .cuencos div img {
   width: auto;
-  height: 10rem;
+  height: 25vh;
 }
 
 .redes i {
   color: grey;
-  margin: 0.5rem 0.5rem 0rem 1.5rem;
+  margin: 0.5vh 0.5vw 0 1.5vw;
   width: 3rem;
   height: auto;
   cursor: pointer;
@@ -418,6 +438,7 @@ footer {
   justify-content: flex-end;
   grid-area: footer;
   height: 25vh;
+  width: 98.9vw;
 }
 footer div {
   width: 100%;
@@ -432,14 +453,14 @@ footer div p {
   justify-content: center;
 }
 footer nav {
-  width: 100%;
+  width: 97vw;
   display: flex;
   justify-content: center;
 }
 footer nav ul {
   display: flex;
   justify-content: space-between;
-  width: 35rem;
+  width: 35vw;
   align-items: center;
 }
 footer nav ul li {
@@ -455,6 +476,10 @@ footer nav ul li a {
 }
 footer nav ul li a:hover {
   color: #B82312;
+}
+
+.footerIndex {
+  width: 100vw;
 }
 
 .footerSabias {
@@ -473,6 +498,13 @@ footer nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+    width: 25vw;
+    height: 45vh;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
   }
   .carousel {
     width: 80%;
@@ -539,18 +571,31 @@ header nav li {
     margin-top: 1.5rem;
   }
   main {
-    height: 60vh;
+    height: 50vh;
+    width: 96vw;
+  }
+  .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+    width: 40vw;
+    height: 40vh;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
   }
   .solana {
     display: block;
   }
   .solana div {
+    width: 96vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .solana div p {
+    font-size: 1.5rem;
+  }
   .h2Conocenos h2 {
+    width: 85vw;
     text-align: center;
   }
   .munay {
@@ -558,14 +603,15 @@ header nav li {
     display: block;
   }
   .munay div {
+    width: 96vw;
     margin: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .video {
-    width: 90%;
+  .munay div p {
+    font-size: 1.5rem;
   }
   .contForm {
     display: flex;
@@ -579,6 +625,9 @@ header nav li {
   .contForm .izquierda .pedidos {
     margin: 1rem;
     order: 2;
+  }
+  .contForm .izquierda .pedidos p {
+    font-size: 1.5rem;
   }
   .contForm .izquierda .redes {
     width: 100%;
@@ -673,6 +722,16 @@ header nav li {
     margin-left: 2rem;
     text-align: center;
   }
+  .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+    width: 80vw;
+    height: 60vh;
+    margin: 4rem;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  .mates .boxMates .cardMates img, .cuencos .boxMates .cardMates img, .cuencos .boxCuencos .cardMates img, .cuencos .boxCuencos .cardCuencos img {
+    height: 35vh;
+  }
   .solana {
     margin: 0;
     width: 100%;
@@ -720,10 +779,10 @@ header nav li {
     flex-direction: column;
     align-items: center;
   }
-  .munay img {
+  .munay div img {
     height: 20rem;
   }
-  .munay p {
+  .munay div p {
     margin: 1rem 2rem;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -748,9 +807,6 @@ header nav li {
     display: flex;
     justify-content: center;
   }
-  .video iframe {
-    width: 75%;
-  }
   body h1 {
     width: 85%;
     font-size: 3rem;
@@ -769,62 +825,42 @@ header nav li {
     margin: 1rem;
     font-size: 1.5rem;
   }
-  .cuencos {
+  .contactame {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-  }
-  .cuencos .boxCuenos {
-    margin: 0;
-  }
-  .cuencos h2 {
-    margin: 1.5rem;
-    font-size: 1.5rem;
-  }
-  .contactame h2 {
-    width: 90%;
-    margin-left: 6vw;
-    font-size: 1.5rem;
   }
   .contactame .contForm {
-    width: 100%;
-    margin: 0;
-    padding: 0%;
-  }
-  .contactame .contForm h3 {
-    font-size: 1.2rem;
+    margin: 2vh 0 0 0;
+    padding: 0;
   }
   .contactame .contForm .izquierda {
-    width: 100%;
-    padding: 0%;
-    align-items: center;
+    width: 95vw;
+    order: 2;
   }
   .contactame .contForm .izquierda .pedidos {
-    width: 90%;
+    width: 80vw;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
+    align-items: center;
+  }
+  .contactame .contForm .izquierda .pedidos p {
+    font-size: 1rem;
   }
   .contactame .contForm .izquierda .redes {
-    width: 90%;
-    margin: 0;
-    padding: 1rem;
+    margin: 0 0 6vh 0;
   }
-  .contactame .contForm .izquierda .redes a {
-    font-size: 0.9rem;
+  .contactame .contForm .izquierda .redes div a {
+    margin: 1.5rem;
   }
   .contactame .contForm .formulario {
-    width: 100%;
-    margin: 1rem 1rem 0rem 1rem;
-    padding: 1rem;
-    width: 90%;
+    margin: 0;
+    padding: 0;
   }
-  .contactame .contForm .formulario form .campo,
-.contactame .contForm .formulario form textarea {
-    width: 18rem;
-  }
-  .contactame .contForm .formulario form textarea {
-    max-width: 18rem;
-    min-width: 18rem;
+  .contactame .redes,
+.contactame .formulario {
+    display: flex;
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */

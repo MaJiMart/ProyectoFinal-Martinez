@@ -3,10 +3,11 @@ header {
     align-items: center;
     grid-area: header;
     height: 25vh;
+    width: 98.5vw;
 
     img {
         width: 50%;
-        margin-left: 3%;
+        margin-left: 1vw;
     }
 
     div {
@@ -36,7 +37,7 @@ header {
     }
 
     nav {
-        width: 100%;
+        width: 97vw;
 
         ul {
             display: flex;
